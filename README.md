@@ -1,7 +1,4 @@
-<!-- This repository is a template -->
-<!-- To use it for your project, search for every comment line and follow instructions -->
-
-# Private Bee Template <!-- Change the title with your project's name -->
+# Private Bee Autonomous
 
 ## Project Description 
 
@@ -23,7 +20,17 @@ The system computes the **optimal trajectory** not only in **space** but also in
 
 ## Repository Purpose
 
-<!-- Complete with the repository purpose and explain what part of the Private Bee project this repository covers -->
+This repository serves as the central integration hub for the GPS 4D project, acting as a autonomous drone pilot, integrates all flight control logic and autonomous decision-making algorithms for the GPS 4D. Its goal is to provide a robust framework for high-level mission execution, allowing aircraft to navigate complex environments without human intervention while strictly adhering to 4D trajectory constraints.
+
+Within the Private Bee ecosystem, this repository focuses on:
+
+- Autonomous Pathfinding: Implementing real-time trajectory generation that accounts for the 4th dimension (Time) to ensure deconfliction and punctual arrivals.
+
+- Sensor Fusion & Perception: Consolidating data from onboard sensors to maintain constant situational awareness and detect environmental changes.
+
+- Behavioral Logic: Managing the transition between flight phases (take-off, cruising, landing, crash) and executing automated responses to mission updates or system alerts.
+
+- Onboard Edge Computing: Hosting the core pilot software designed to run on embedded hardware, ensuring low-latency processing for critical flight maneuvers.
 
 ---
 
@@ -75,7 +82,7 @@ npm run build
 
 Example:
 ```bash
-git clone https://github.com/PrivateBeeTEST/your-repository.git
+git clone https://github.com/PrivateBee/PrivateBee-Autonomous.git
 cd your-repository
 npm install
 ```
